@@ -131,4 +131,4 @@ Todas las páginas excepto `index.php` están protegidas con `protegerPagina()`.
 
 ## Video
 
-Enlace al video de demostración: _completar_
+Enlace al video de demostración: _https://drive.google.com/file/d/1Cl7KLJR4zi993BXY02Y7WOe3DgZjNPdR/view?usp=sharing_
