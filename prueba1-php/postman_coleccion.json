@@ -1,0 +1,54 @@
+{
+  "info": {
+    "name": "Prueba 1 - API Rifa",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base", "value": "http://localhost:8000/api" }
+  ],
+  "item": [
+    {
+      "name": "1. Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"usuario\": \"userupla\",\n  \"clave\": \"upla123\"\n}" },
+        "url": "{{base}}/login.php"
+      }
+    },
+    {
+      "name": "2. Listar participantes",
+      "request": { "method": "GET", "url": "{{base}}/participantes.php" }
+    },
+    {
+      "name": "3. Listar premios",
+      "request": { "method": "GET", "url": "{{base}}/premios.php" }
+    },
+    {
+      "name": "4. Registrar participante",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Ana\",\n  \"apellido\": \"Pérez\",\n  \"numero_rifa\": 30\n}" },
+        "url": "{{base}}/registrar.php"
+      }
+    },
+    {
+      "name": "5. Actualizar participante",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"id\": 4,\n  \"nombre\": \"Ana María\",\n  \"numero_rifa\": 31\n}" },
+        "url": "{{base}}/actualizar.php"
+      }
+    },
+    {
+      "name": "6. Eliminar participante",
+      "request": { "method": "GET", "url": "{{base}}/eliminar.php?id=4" }
+    },
+    {
+      "name": "7. Logout",
+      "request": { "method": "GET", "url": "{{base}}/logout.php" }
+    }
+  ]
+}

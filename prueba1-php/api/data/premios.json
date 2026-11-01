@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Notebook",
+        "descripcion": "Notebook 14 pulgadas, 8 GB RAM, 256 GB SSD",
+        "estado": "disponible"
+    },
+    {
+        "id": 2,
+        "nombre": "Audífonos inalámbricos",
+        "descripcion": "Audífonos bluetooth con cancelación de ruido",
+        "estado": "disponible"
+    },
+    {
+        "id": 3,
+        "nombre": "Gift card $30.000",
+        "descripcion": "Tarjeta de regalo canjeable en tiendas del Mall Marina",
+        "estado": "entregado"
+    }
+]
